@@ -33,11 +33,27 @@
 					</tr>
 					<tr>
 						<td>
-							<form>
+							<form action="rejestracja.html" autocomplete = "on">
 								<ol>
-									<li style="margin-bottom:3px"><input type="text" placeholder="Imię"></li>
-									<li style="margin-bottom:3px"><input type="text" placeholder="Nazwisko"></li>
-									<li style="margin-bottom:3px"><input type="email" placeholder="Adres e-mail"></li>
+									<li style="margin-bottom:3px"><input type="text"  name="firstname" placeholder="Imię" autofocus></li>
+									<li style="margin-bottom:3px"><input type="text"  name="lastname" placeholder="Nazwisko" required></li>
+									<li style="margin-bottom:3px"><input type="email" name="mail" placeholder="Adres e-mail" required></li>
+									<li style="margin-bottom:3px"><input type="text" list="months" placeholder="Miesiąc urodzin"></li>
+									<datalist id="months" style="display:none;">
+										<option value="Styczeń">
+										<option value="Luty">
+										<option value="Marzec">
+										<option value="Kwiecień">
+										<option value="Maj">
+										<option value="Czerwiec">
+										<option value="Lipiec">
+										<option value="Sierpień">
+										<option value="Wrzesień">
+										<option value="Październik">
+										<option value="Listopad">
+										<option value="Grudzień">
+									</datalist>
+									<li style="margin-bottom:3px"><input type="tel" name="phone" placeholder="numer-telefonu" pattern="(5|6|7|8|9)[0-9]{8}"></li>
 									<li style="margin-bottom:3px"><input type="password" placeholder="Nowe hasło"></li>
 									<li><input type="password" placeholder="Powtórz nowe hasło"></li>
 								</ol>
