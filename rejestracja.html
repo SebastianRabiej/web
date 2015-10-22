@@ -12,51 +12,57 @@
 			<div style="font-size:30px;">
 				<a href="index.html" ><img alt="logo" src="logo.jpg" style="vertical-align:middle;"></a>  Witamy w najlepszym sklepie telefonicznym !
 			</div>
-			<table style="margin-left:auto; margin-right:auto;font-size:32px; border-spacing: 13px; ">
-				<tbody>
-					<tr>
-						<td><a href="index.html" style="color:black;" >Główna</a></td>
-						<td><a href="katalog.html" style="color:black;" >Katalog</a></td>
-						<td><a href="kontakt.html" style="color:black;" >Kontakt</a></td>
-						<td><a href="koszyk.html" style="color:black;" >Koszyk</a></td>
-						<td><a href="logowanie.html" style="color:black;" >Logowanie</a></td>
-					</tr>
-				</tbody>
-			</table>
+			<nav>
+				<table style="margin-left:auto; margin-right:auto;font-size:32px; border-spacing: 13px; ">
+					<tbody>
+						<tr>
+							<td><a href="index.html" style="color:black;" >Główna</a></td>
+							<td><a href="katalog.html" style="color:black;" >Katalog</a></td>
+							<td><a href="kontakt.html" style="color:black;" >Kontakt</a></td>
+							<td><a href="koszyk.html" style="color:black;" >Koszyk</a></td>
+							<td><a href="logowanie.html" style="color:black;" >Logowanie</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</nav>
 			<hr>
 		</header>
 		<main>
 			<div id="rejestrowanie" style="margin-left:auto; margin-right:auto; margin-top:3px; width:400px">
 				<table>
 					<tr>
-						<th style="font-size:22px">Aby się zarejestrować wypełnij poniższe dane:</th>
+						<th style="font-size:22px">Rejestracja</th>
 					</tr>
 					<tr>
 						<td>
+							<p>Aby się zarejestrować:</p>
+							<ol>
+								<li>Wypełnij poniższe dane</li>
+								<li>Potwierdź zapoznanie się z regulaminem</li>
+								<li>Kliknij przycisk "Zarejestruj"</li>
+							</ol>
 							<form action="rejestracja.html" autocomplete = "on">
-								<ol>
-									<li style="margin-bottom:3px"><input type="text"  name="firstname" placeholder="Imię" autofocus></li>
-									<li style="margin-bottom:3px"><input type="text"  name="lastname" placeholder="Nazwisko" required></li>
-									<li style="margin-bottom:3px"><input type="email" name="mail" placeholder="Adres e-mail" required></li>
-									<li style="margin-bottom:3px"><input type="text" list="months" placeholder="Miesiąc urodzin"></li>
-									<datalist id="months" style="display:none;">
-										<option value="Styczeń">
-										<option value="Luty">
-										<option value="Marzec">
-										<option value="Kwiecień">
-										<option value="Maj">
-										<option value="Czerwiec">
-										<option value="Lipiec">
-										<option value="Sierpień">
-										<option value="Wrzesień">
-										<option value="Październik">
-										<option value="Listopad">
-										<option value="Grudzień">
-									</datalist>
-									<li style="margin-bottom:3px"><input type="tel" name="phone" placeholder="numer-telefonu" pattern="(5|6|7|8|9)[0-9]{8}"></li>
-									<li style="margin-bottom:3px"><input type="password" placeholder="Nowe hasło"></li>
-									<li><input type="password" placeholder="Powtórz nowe hasło"></li>
-								</ol>
+								<p style="margin-bottom:3px"><label><input type="text"  name="firstname" placeholder="Imię" autofocus>(Jan)</label></p>
+								<p style="margin-bottom:3px"><input type="text"  name="lastname" placeholder="Nazwisko" required>(Kowalski)</p>
+								<p style="margin-bottom:3px"><input type="email" name="mail" placeholder="Adres e-mail" required>(jkowalski@o2.pl)</p>
+								<p style="margin-bottom:3px"><input type="text" list="months" placeholder="Miesiąc urodzin"></p>
+								<datalist id="months" style="display:none;">
+									<option value="Styczeń" label="I">
+									<option value="Luty" label="II">
+									<option value="Marzec" label="III">
+									<option value="Kwiecień" label="IV">
+									<option value="Maj" label="V">
+									<option value="Czerwiec" label="VI">
+									<option value="Lipiec" label="VII">
+									<option value="Sierpień" label="VIII">
+									<option value="Wrzesień" label="IX">
+									<option value="Październik" label="X">
+									<option value="Listopad" label="XI">
+									<option value="Grudzień" label="XII">
+								</datalist>
+								<p style="margin-bottom:3px"><input type="tel" name="phone" placeholder="numer-telefonu" pattern="(5|6|7|8|9)[0-9]{8}">(538044717)</p>
+								<p style="margin-bottom:3px"><input type="password" placeholder="Nowe hasło"></p>
+								<p><input type="password" placeholder="Powtórz nowe hasło"></p>
 								<p style="font-size:20px">Skąd dowiedziałeś się o naszej stronie?</p>
 								<table>
 									<tr>
@@ -87,6 +93,7 @@
 								<input type="submit" value="Zarejestruj">
 								<input type="reset" value="Wyczyść">
 							</form>
+							<p style="margin-top:10px"><a href="pytaniaDodatkowe.html">Pytania dodatkowe</a></p>
 						</td>
 					</tr>
 				</table>
